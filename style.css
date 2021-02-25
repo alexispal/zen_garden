@@ -98,14 +98,12 @@ header {
   text-align: center;
   color: var(--accent5-color);
 }
-
 header h1 {
   font-size: 2em;
   background: #f8fff4;
   font: "yusei magic", sans-serif;
   color: #f29295;
 }
-
 header h2 {
   font-size: 0.95em;
   background: #f8fff4;

@@ -101,26 +101,31 @@ abbr {
 	width: 100%;
 }
 
-header {
-	background-color: var(--accent2-color);
+
+
+//changed nesting header--Sam
+header {	background-color: var(--accent2-color);
 	padding: 2em;
 	text-align: center;
 	color: var(--accent5-color);
-}
 
-header h1 {
+	h1 {
 	font-size: 2em;
 	background: #f8fff4;
 	font: 'yusei magic', sans-serif;
 	color: #f29295;
 }
 
-header h2 {
+ h2 {
 	font-size: .95em;
 	background: #f8fff4;
 	font: 'yusei magic', sans-serif;
 	color: #f29295;
 }
+
+}
+
+
 
 .summary {
 	clear: both;
