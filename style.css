@@ -32,14 +32,25 @@ html {
 
 body {
   line-height: 1.88889;
-  color: #555753;
-  margin: 0;
+  color: var(--accent5-color);
+  margin: auto;
   padding: 0;
-  background: #f8fff4;
+  background: var(--primary-color);
+}
+
+#zen-preamble.preamble {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.main.supporting {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 p {
   margin-top: 0;
+  font-size: 14px;
   text-align: justify;
   font-family: var(--paragraph-font);
 }
@@ -49,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-  font: 1.4em "yusei magic", sans-serif;
+  font: 18px "yusei magic", sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
   color: #f29295;
@@ -99,13 +110,13 @@ header {
   color: var(--accent5-color);
 }
 header h1 {
-  font-size: 2em;
+  font-size: 40px;
   background: #f8fff4;
   font: "yusei magic", sans-serif;
   color: #f29295;
 }
 header h2 {
-  font-size: 0.95em;
+  font-size: 20px;
   background: #f8fff4;
   font: "yusei magic", sans-serif;
   color: #f29295;
@@ -118,8 +129,11 @@ header h2 {
   /* float: left; */
 }
 .summary p {
-  font: italic 1.1em/2.2 georgia;
+  font-family: var(--paragraph-font);
+  font-size: 15px;
+  font-style: italic;
   text-align: center;
+  line-height: 1.5;
 }
 
 /* .preamble {
@@ -127,9 +141,23 @@ header h2 {
 	padding: 0px 10px 0 10px;
 	margin:
 	} */
+.preamble::after, .participation::after {
+  content: url(assets/placeholder-resize.png);
+}
+
+.explanation::after {
+  content: url(assets/placeholder-resize.png);
+  grid-column: 1;
+  grid-row: 2;
+}
+
 .supporting {
   /* padding-left: 10px;  */
   margin-bottom: 40px;
+}
+
+.benefits::after {
+  content: url(assets/placeholder-resize.png);
 }
 
 footer {
@@ -162,7 +190,6 @@ footer a:hover {
 }
 .sidebar li {
   line-height: 1.3em;
-  background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center;
   display: block;
   padding-top: 5px;
   margin-bottom: 5px;
@@ -171,15 +198,14 @@ footer a:hover {
 
 /* links to other zen garden designs */
 .sidebar .wrapper {
-  font: 10px verdana, sans-serif;
-  background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y;
+  font: 13px var(--paragraph-font) !important;
+  color: var(--accent1-color);
   padding: 10px;
-  margin-top: 150px;
-  width: 130px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .sidebar h3.select {
-  background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left;
   margin: 10px 0 5px 0;
   width: 97px;
   height: 16px;
@@ -189,7 +215,6 @@ footer a:hover {
 }
 
 .sidebar h3.archives {
-  background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left;
   margin: 25px 0 5px 0;
   width: 57px;
   height: 14px;
@@ -199,7 +224,6 @@ footer a:hover {
 }
 
 .sidebar h3.resources {
-  background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left;
   margin: 25px 0 5px 0;
   width: 63px;
   height: 10px;
@@ -209,16 +233,106 @@ footer a:hover {
 }
 
 .sidebar li a:link {
-  color: #988F5E;
+  color: var(--accent3-color);
 }
 .sidebar li a:visited {
   color: #B3AE94;
 }
 
 @media only screen and (min-width: 850px) {
+  p {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
   header h2 {
     position: absolute;
     top: 0;
+  }
+
+  #zen-intro > header {
+    margin: 0;
+  }
+
+  #zen-preamble.preamble {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .summary {
+    margin-left: 550px;
+    margin-right: 550px;
+  }
+  .summary p {
+    font-size: 18px;
+  }
+
+  #zen-supporting.main.supporting {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .preamble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 80px;
+  }
+  .preamble p {
+    grid-column: 1;
+  }
+
+  .benefits::before {
+    grid-row: 2;
+  }
+
+  .explanation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 100px;
+  }
+  .explanation h3, .explanation p {
+    grid-column: 2;
+  }
+
+  .explanation::before {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .participation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 100px;
+  }
+  .participation p, .participation h3 {
+    grid-column: 1;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 100px;
+  }
+  .benefits p, .benefits h3 {
+    grid-column: 2;
+  }
+
+  .requirements {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .sidebar .wrapper {
+    font: 14px verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 300px 200px 300px;
+    grid-gap: 100px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 
