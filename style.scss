@@ -13,24 +13,23 @@
 /* basic elements */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yusei+Magic&display=swap');
-:root {
-	--primary-color: #F8FFF4;
-	/*Mint Cream */
-	--secondary-color: #FFD670;
-	/*Orange Yellow Crayola */
-	--accent1-color: #FF6933;
-	/*Orange Crayola */
-	--accent2-color: #F29295;
-	/*Salamon Pink */
-	--accent3-color: #417647;
-	/*Fern Green */
-	--accent4-color: #9ECDE6;
-	/*Light Cornflower Blue */
-	--accent5-color: #16324F;
-	/*Prussian Blue */
-	--heading-font: 'Yusei Magic', sans-serif;
-	--paragraph-font: 'Roboto', sans-serif;
-}
+
+$primary-color: #F8FFF4;
+/*Mint Cream */
+$secondary-color: #FFD670;
+/*Orange Yellow Crayola */
+$accent1-color: #FF6933;
+/*Orange Crayola */
+$accent2-color: #F29295;
+/*Salamon Pink */
+$accent3-color: #417647;
+/*Fern Green */
+$accent4-color: #9ECDE6;
+/*Light Cornflower Blue */
+$accent5-color: #16324F;
+/*Prussian Blue */
+$heading-font: 'Yusei Magic', sans-serif;
+$paragraph-font: 'Roboto', sans-serif;
 
 html {
 	margin: 0;
@@ -39,10 +38,10 @@ html {
 
 body {
 	line-height: 1.88889;
-	color: var(--accent5-color);
+	color: $accent5-color;
 	margin: auto;
 	padding: 0;
-	background: var(--primary-color);
+	background: $primary-color;
 	// width: 100%;
 }
 #zen-preamble.preamble{
@@ -59,21 +58,22 @@ p {
 	margin-top: 0;
 	font-size: 14px;
 	text-align: justify;
-	font-family: var(--paragraph-font);
+	font-family: $paragraph-font;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--heading-font);
+	font-family: $heading-font;
 }
 // header h1{
 // 	font-size: 12px;
 // }
 
 h3 {
-	font: 18px 'yusei magic', sans-serif;
+	font-family: $heading-font;
+	font-size: 18px;
 	letter-spacing: 1px;
 	margin-bottom: 0;
-	color: #f29295;
+	color: $accent2-color;
 }
 
 //color orange
@@ -117,23 +117,24 @@ abbr {
 }
 
 //changed nesting header--Sam
-header {background-color: var(--accent2-color);
+header {
+	background-color: $accent2-color;
 	padding: 2em;
 	text-align: center;
-	color: var(--accent5-color);
+	color: $accent5-color;
 
 	h1 {
 	font-size: 40px;
 	background: #f8fff4;
-	font: 'yusei magic', sans-serif;
-	color: #f29295;
+	font-family: $heading-font;
+	color: $accent2-color;
 }
 
  h2 {
 	font-size: 20px;
 	background: #f8fff4;
-	font: 'yusei magic', sans-serif;
-	color: #f29295;
+	font: $heading-font;
+	color: $accent2-color;
 }
 
 }
@@ -147,7 +148,7 @@ header {background-color: var(--accent2-color);
 	/* float: left; */
 
 	p{
-		font-family: var(--paragraph-font);
+		font-family: $paragraph-font;
 		font-size: 15px;
 		font-style: italic;
 		text-align: center;
@@ -166,7 +167,7 @@ header {background-color: var(--accent2-color);
 .explanation::after{
 	content: url(assets/placeholder-resize.png);
 	grid-column:1;
-		grid-row: 2;
+	grid-row: 2;
 }
 .supporting {
 	/* padding-left: 10px;  */
@@ -182,12 +183,12 @@ header {background-color: var(--accent2-color);
 //nesting footer--Sam
 footer {
 	text-align: center;
-	background-color: var(--accent2-color);
+	background-color: $accent2-color;
 	padding: 2em;
 	// margin: 0 auto;
 
 	a {
-	font-family: var(--paragraph-font);
+	font-family: $paragraph-font;
 	margin: .5em;
 	}
 
@@ -195,7 +196,7 @@ footer {
 
 
 footer a:link, footer a:visited {
-	color: var(--accent5-color);
+	color: $accent5-color;
 }
 
 footer a:hover {
@@ -229,8 +230,9 @@ footer a:hover {
 /* links to other zen garden designs */
 
 .sidebar .wrapper {
-	font: 13px var(--paragraph-font) !important;
-	color: var(--accent1-color);
+	font-family: $paragraph-font !important;
+	font-size: 13px;
+	color: $accent1-color;
 	// background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y;
 	padding: 10px;
 	
@@ -271,7 +273,7 @@ footer a:hover {
 //.sidebar li nesting--Sam
 .sidebar li {
 	a:link {
-	color: var(--accent3-color);
+	color: $accent3-color;
 }
 
 a:visited {
