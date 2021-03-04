@@ -6,25 +6,13 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Yusei+Magic&display=swap");
-:root {
-  --primary-color: #F8FFF4;
-  /*Mint Cream */
-  --secondary-color: #FFD670;
-  /*Orange Yellow Crayola */
-  --accent1-color: #FF6933;
-  /*Orange Crayola */
-  --accent2-color: #F29295;
-  /*Salamon Pink */
-  --accent3-color: #417647;
-  /*Fern Green */
-  --accent4-color: #9ECDE6;
-  /*Light Cornflower Blue */
-  --accent5-color: #16324F;
-  /*Prussian Blue */
-  --heading-font: "Yusei Magic", sans-serif;
-  --paragraph-font: "Roboto", sans-serif;
-}
-
+/*Mint Cream */
+/*Orange Yellow Crayola */
+/*Orange Crayola */
+/*Salamon Pink */
+/*Fern Green */
+/*Light Cornflower Blue */
+/*Prussian Blue */
 html {
   margin: 0;
   padding: 0;
@@ -32,10 +20,10 @@ html {
 
 body {
   line-height: 1.88889;
-  color: var(--accent5-color);
+  color: #16324F;
   margin: auto;
   padding: 0;
-  background: var(--primary-color);
+  background-color: #9ECDE6;
 }
 
 #zen-preamble.preamble {
@@ -52,18 +40,19 @@ p {
   margin-top: 0;
   font-size: 14px;
   text-align: justify;
-  font-family: var(--paragraph-font);
+  font-family: "Roboto", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
+  font-family: "Yusei Magic", sans-serif;
 }
 
 h3 {
-  font: 18px "yusei magic", sans-serif;
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 18px;
   letter-spacing: 1px;
   margin-bottom: 0;
-  color: #f29295;
+  color: #F29295;
 }
 
 a:link {
@@ -104,22 +93,24 @@ abbr {
 }
 
 header {
-  background-color: var(--accent2-color);
+  background: url(assets/wave-header.svg);
   padding: 2em;
   text-align: center;
-  color: var(--accent5-color);
+  color: #16324F;
 }
+
 header h1 {
   font-size: 40px;
   background: #f8fff4;
-  font: "yusei magic", sans-serif;
-  color: #f29295;
+  font-family: "Yusei Magic", sans-serif;
+  color: #F29295;
 }
+
 header h2 {
   font-size: 20px;
   background: #f8fff4;
-  font: "yusei magic", sans-serif;
-  color: #f29295;
+  font: "Yusei Magic", sans-serif;
+  color: #F29295;
 }
 
 .summary {
@@ -128,8 +119,9 @@ header h2 {
   /* width: 350px; */
   /* float: left; */
 }
+
 .summary p {
-  font-family: var(--paragraph-font);
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-style: italic;
   text-align: center;
@@ -147,7 +139,9 @@ header h2 {
 
 .explanation::after {
   content: url(assets/placeholder-resize.png);
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 2;
   grid-row: 2;
 }
 
@@ -162,16 +156,17 @@ header h2 {
 
 footer {
   text-align: center;
-  background-color: var(--accent2-color);
+  background-color: #F29295;
   padding: 2em;
 }
+
 footer a {
-  font-family: var(--paragraph-font);
-  margin: 0.5em;
+  font-family: "Roboto", sans-serif;
+  margin: .5em;
 }
 
 footer a:link, footer a:visited {
-  color: var(--accent5-color);
+  color: #16324F;
 }
 
 footer a:hover {
@@ -184,10 +179,12 @@ footer a:hover {
   top: 0;
   right: 0;
 }
+
 .sidebar ul {
   margin: 0;
   padding: 0;
 }
+
 .sidebar li {
   line-height: 1.3em;
   display: block;
@@ -198,8 +195,9 @@ footer a:hover {
 
 /* links to other zen garden designs */
 .sidebar .wrapper {
-  font: 13px var(--paragraph-font) !important;
-  color: var(--accent1-color);
+  font-family: "Roboto", sans-serif !important;
+  font-size: 13px;
+  color: #FF6933;
   padding: 10px;
   margin-left: 60px;
   margin-right: 60px;
@@ -233,8 +231,9 @@ footer a:hover {
 }
 
 .sidebar li a:link {
-  color: var(--accent3-color);
+  color: #417647;
 }
+
 .sidebar li a:visited {
   color: #B3AE94;
 }
@@ -243,97 +242,97 @@ footer a:hover {
   p {
     font-size: 18px;
   }
-
   h3 {
     font-size: 28px;
   }
-
   header h2 {
     position: absolute;
     top: 0;
   }
-
   #zen-intro > header {
     margin: 0;
   }
-
   #zen-preamble.preamble {
     margin-left: 150px;
     margin-right: 150px;
   }
-
-  .summary {
-    margin-left: 550px;
-    margin-right: 550px;
-  }
   .summary p {
     font-size: 18px;
   }
-
   #zen-supporting.main.supporting {
     margin-left: 150px;
     margin-right: 150px;
   }
-
   .preamble {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 0px 80px;
   }
   .preamble p {
+    -ms-grid-column: 1;
     grid-column: 1;
   }
-
   .benefits::before {
+    -ms-grid-row: 2;
     grid-row: 2;
   }
-
   .explanation {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 0px 100px;
   }
   .explanation h3, .explanation p {
+    -ms-grid-column: 2;
     grid-column: 2;
   }
-
   .explanation::before {
+    -ms-grid-column: 1;
     grid-column: 1;
+    -ms-grid-row: 2;
     grid-row: 2;
   }
-
   .participation {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 0px 100px;
   }
   .participation p, .participation h3 {
+    -ms-grid-column: 1;
     grid-column: 1;
   }
-
   .benefits {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 0px 100px;
   }
   .benefits p, .benefits h3 {
+    -ms-grid-column: 2;
     grid-column: 2;
   }
-
   .requirements {
     margin-left: 200px;
     margin-right: 200px;
   }
-
   .sidebar .wrapper {
     font: 14px verdana, sans-serif;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 300px 200px 300px;
+    -ms-grid-columns: 300px 200px 300px;
+        grid-template-columns: 300px 200px 300px;
     grid-gap: 100px;
     width: 100%;
     margin: 0 auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
