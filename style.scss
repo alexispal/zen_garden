@@ -119,23 +119,19 @@ abbr {
 
 //changed nesting header--Sam
 header {
-	background: url(assets/wave-header.svg);
+	background: url(assets/fish-svg-01-01.svg);
 	padding: 2em;
 	text-align: center;
-	color: $accent5-color;
+	font-family: $heading-font;
+	color: $primary-color;
+	text-shadow: 2px 2px 4px $accent5-color;
 
 	h1 {
 	font-size: 40px;
-	background: #f8fff4;
-	font-family: $heading-font;
-	color: $accent2-color;
 }
 
  h2 {
 	font-size: 20px;
-	background: #f8fff4;
-	font: $heading-font;
-	color: $accent2-color;
 }
 
 }
