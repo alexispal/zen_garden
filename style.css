@@ -20,35 +20,12 @@ html {
 }
 
 body {
-  background: -webkit-gradient(linear, left bottom, left top, from(#16324f), color-stop(#9ecde6), to(#ffffff));
-  background: linear-gradient(0deg, #16324f, #9ecde6, #ffffff);
-  background-size: 600% 600%;
-  -webkit-animation: wave 22s ease infinite;
-  animation: wave 22s ease infinite;
-}
-
-@-webkit-keyframes wave {
-  0% {
-    background-position: 43% 0%;
-  }
-  50% {
-    background-position: 58% 100%;
-  }
-  100% {
-    background-position: 43% 0%;
-  }
-}
-
-@keyframes wave {
-  0% {
-    background-position: 43% 0%;
-  }
-  50% {
-    background-position: 58% 100%;
-  }
-  100% {
-    background-position: 43% 0%;
-  }
+  line-height: 1.88889;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(#9ECDE6), to(#16324F));
+  background: linear-gradient(white, #9ECDE6, #16324F);
 }
 
 #zen-preamble.preamble {
