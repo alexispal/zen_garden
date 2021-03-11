@@ -118,24 +118,20 @@ abbr {
 }
 
 header {
-  background: url(assets/wave-header.svg);
+  background: url(assets/fish-svg-01-01.svg);
   padding: 2em;
   text-align: center;
-  color: #16324F;
+  font-family: "Yusei Magic", sans-serif;
+  color: #F8FFF4;
+  text-shadow: 2px 2px 4px #16324F;
 }
 
 header h1 {
   font-size: 40px;
-  background: #f8fff4;
-  font-family: "Yusei Magic", sans-serif;
-  color: #F29295;
 }
 
 header h2 {
   font-size: 20px;
-  background: #f8fff4;
-  font: "Yusei Magic", sans-serif;
-  color: #F29295;
 }
 
 .summary {
@@ -181,7 +177,8 @@ header h2 {
 
 footer {
   text-align: center;
-  background-color: #F29295;
+  background: url(assets/seagrass-svg-01-01.svg) no-repeat;
+  background-position: center;
   padding: 2em;
 }
 
