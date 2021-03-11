@@ -13,17 +13,42 @@
 /*Fern Green */
 /*Light Cornflower Blue */
 /*Prussian Blue */
+/*white */
 html {
   margin: 0;
   padding: 0;
 }
 
 body {
-  line-height: 1.88889;
-  color: #16324F;
-  margin: auto;
-  padding: 0;
-  background-color: #9ECDE6;
+  background: -webkit-gradient(linear, left bottom, left top, from(#16324f), color-stop(#9ecde6), to(#ffffff));
+  background: linear-gradient(0deg, #16324f, #9ecde6, #ffffff);
+  background-size: 600% 600%;
+  -webkit-animation: wave 22s ease infinite;
+  animation: wave 22s ease infinite;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    background-position: 43% 0%;
+  }
+  50% {
+    background-position: 58% 100%;
+  }
+  100% {
+    background-position: 43% 0%;
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: 43% 0%;
+  }
+  50% {
+    background-position: 58% 100%;
+  }
+  100% {
+    background-position: 43% 0%;
+  }
 }
 
 #zen-preamble.preamble {

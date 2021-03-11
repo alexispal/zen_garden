@@ -28,6 +28,8 @@ $accent4-color: #9ECDE6;
 /*Light Cornflower Blue */
 $accent5-color: #16324F;
 /*Prussian Blue */
+$accent6-color: #ffffff;
+/*white */
 $heading-font: 'Yusei Magic', sans-serif;
 $paragraph-font: 'Roboto', sans-serif;
 
@@ -36,15 +38,59 @@ html {
 	padding: 0;
 }
 
-body {
-	line-height: 1.88889;
-	color: $accent5-color;
-	margin: auto;
-	padding: 0;
-	background-color: $accent4-color;
 
-	// width: 100%;
+
+// body {
+// 	line-height: 1.88889;
+// 	margin: auto;
+// 	padding: 0;
+// 	width: 100%;
+
+// 	//gradient white to dark blue scrolling down
+// 	// background: linear-gradient(white, $accent4-color, $accent5-color);
+	
+// 	// //navy wave svg 
+// 	// background: url(assets/zen_garden_svg/wave1.svg), url(assets/zen_garden_svg/wave.svg);
+	
+
+// 	// background: url(assets/zen_garden_svg/wave1.svg);
+// 	// background-image: linear-gradient(white, $accent4-color, $accent5-color);
+
+
+// 	// //gradient wave multi blues
+// 	// background: url(assets/zen_garden_svg/gradient_wave.png);
+	
+// }
+
+
+//animated background
+body {
+    background: linear-gradient(0deg, #16324f, #9ecde6, #ffffff);
+    background-size: 600% 600%;
+
+    -webkit-animation: wave 22s ease infinite;
+    -moz-animation: wave 22s ease infinite;
+    animation: wave 22s ease infinite;
 }
+
+@-webkit-keyframes wave {
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+@-moz-keyframes wave {
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+@keyframes wave {
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+//animated background
+
+
 #zen-preamble.preamble{
 	margin-left: 40px;
 	margin-right: 40px;
