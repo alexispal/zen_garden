@@ -38,18 +38,22 @@ html {
 	padding: 0;
 }
 
-
-
 body {
-	line-height: 1.88889;
+	line-height: 1.5;
 	margin: auto;
 	padding: 0;
 	width: 100%;
 
-	// gradient white to dark blue scrolling down
-	background: linear-gradient(white, $accent4-color, $accent5-color);
+	// gradient light green to dark blue scrolling down
+// 	background: linear-gradient(#97D8E2, #8FCBDE, #78B1D5, #6194C2);
+// }
+
+		// gradient light blue to dark blue scrolling down
+	background: linear-gradient(#D7E9FE, #B7D6F7, #84BCF3, #509BDE, #2480CD, #0645A4);
 }
-	
+
+
+
 #zen-preamble.preamble{
 	margin-left: 40px;
 	margin-right: 40px;
