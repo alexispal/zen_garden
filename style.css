@@ -24,8 +24,8 @@ body {
   margin: auto;
   padding: 0;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D7E9FE), color-stop(#B7D6F7), color-stop(#84BCF3), color-stop(#509BDE), color-stop(#2480CD), to(#0645A4));
-  background: linear-gradient(#D7E9FE, #B7D6F7, #84BCF3, #509BDE, #2480CD, #0645A4);
+  color: #16324F;
+  background: linear-gradient(#cff8f8, #6bebea);
 }
 
 #zen-preamble.preamble {
@@ -47,6 +47,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Yusei Magic", sans-serif;
+  text-shadow: 1px 1px #16324F;
 }
 
 h3 {
@@ -54,7 +55,7 @@ h3 {
   font-size: 18px;
   letter-spacing: 1px;
   margin-bottom: 0;
-  color: #F29295;
+  color: #FF6933;
 }
 
 a:link {
@@ -71,7 +72,7 @@ a:visited {
 
 a:hover, a:focus, a:active {
   text-decoration: underline;
-  color: #FFD670;
+  color: #F29295;
 }
 
 abbr {
@@ -102,22 +103,20 @@ header {
   color: #F8FFF4;
   text-shadow: 2px 2px 4px #16324F;
 }
-
 header h1 {
   font-size: 40px;
 }
-
 header h2 {
   font-size: 20px;
 }
 
 .summary {
   clear: both;
-  margin: 50px 20px 20px 10px;
+  margin: 0 auto;
+  max-width: 550px;
   /* width: 350px; */
   /* float: left; */
 }
-
 .summary p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -137,9 +136,7 @@ header h2 {
 
 .explanation::after {
   content: url(assets/placeholder-resize.png);
-  -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 2;
   grid-row: 2;
 }
 
@@ -158,18 +155,18 @@ footer {
   background-position: center;
   padding: 2em;
 }
-
 footer a {
   font-family: "Roboto", sans-serif;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 footer a:link, footer a:visited {
-  color: #16324F;
+  color: #FF6933;
 }
 
 footer a:hover {
   font-size: 1em;
+  color: #F29295;
 }
 
 .sidebar {
@@ -177,13 +174,13 @@ footer a:hover {
   /* position: absolute;  */
   top: 0;
   right: 0;
+  background-image: url(assets/undersea.jpeg);
+  min-height: 430px;
 }
-
 .sidebar ul {
   margin: 0;
   padding: 0;
 }
-
 .sidebar li {
   line-height: 1.3em;
   display: block;
@@ -192,11 +189,21 @@ footer a:hover {
   list-style-type: none;
 }
 
+.sidebar li a:link {
+  color: #F8FFF4;
+}
+.sidebar li a:hover {
+  color: #F29295;
+}
+.sidebar li a:visited {
+  color: #F8FFF4;
+}
+
 /* links to other zen garden designs */
 .sidebar .wrapper {
   font-family: "Roboto", sans-serif !important;
   font-size: 13px;
-  color: #FF6933;
+  color: #16324F;
   padding: 10px;
   margin-left: 60px;
   margin-right: 60px;
@@ -229,109 +236,97 @@ footer a:hover {
   overflow: hidden;
 }
 
-.sidebar li a:link {
-  color: #417647;
-}
-
-.sidebar li a:visited {
-  color: #B3AE94;
-}
-
 @media only screen and (min-width: 850px) {
   p {
     font-size: 18px;
   }
+
   h3 {
     font-size: 28px;
   }
+
   header h2 {
     position: absolute;
     top: 0;
   }
+
   #zen-intro > header {
     margin: 0;
   }
+
   #zen-preamble.preamble {
     margin-left: 150px;
     margin-right: 150px;
   }
+
   .summary p {
     font-size: 18px;
   }
+
   #zen-supporting.main.supporting {
     margin-left: 150px;
     margin-right: 150px;
   }
+
   .preamble {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 0px 80px;
   }
   .preamble p {
-    -ms-grid-column: 1;
     grid-column: 1;
   }
+
   .benefits::before {
-    -ms-grid-row: 2;
     grid-row: 2;
   }
+
   .explanation {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 0px 100px;
   }
   .explanation h3, .explanation p {
-    -ms-grid-column: 2;
     grid-column: 2;
   }
+
   .explanation::before {
-    -ms-grid-column: 1;
     grid-column: 1;
-    -ms-grid-row: 2;
     grid-row: 2;
   }
+
   .participation {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 0px 100px;
   }
   .participation p, .participation h3 {
-    -ms-grid-column: 1;
     grid-column: 1;
   }
+
   .benefits {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 0px 100px;
   }
   .benefits p, .benefits h3 {
-    -ms-grid-column: 2;
     grid-column: 2;
   }
+
   .requirements {
     margin-left: 200px;
     margin-right: 200px;
   }
+
   .sidebar .wrapper {
     font: 14px verdana, sans-serif;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 300px 200px 300px;
-        grid-template-columns: 300px 200px 300px;
+    grid-template-columns: 300px 200px 300px;
     grid-gap: 100px;
     width: 100%;
     margin: 0 auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
