@@ -33,6 +33,7 @@ $accent6-color: #ffffff;
 $heading-font: 'Yusei Magic', sans-serif;
 $paragraph-font: 'Roboto', sans-serif;
 
+
 html {
 	margin: 0;
 	padding: 0;
@@ -172,7 +173,7 @@ header {
 	margin:
 	} */
 .preamble::after, .participation::after{
-	content: url(assets/placeholder-resize.png);
+	content: url(assets/starfish-orange.svg);
 }
 .explanation::after{
 	content: url(assets/placeholder-resize.png);
