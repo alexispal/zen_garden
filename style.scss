@@ -465,6 +465,24 @@ font-size: 28px;
 	
 			}
 	}
+
+
+
+	//Adding seagrass to side of requirements
+// .requirements::before {
+// 	content: url(assets/seagrass.svg);
+	
+// //center
+// 	grid-column-start: 1;
+//     grid-column-end: 1;
+//     grid-row-start: 1;
+//     grid-row-end: 4;
+
+// }
+
+
+
+
 	.sidebar .wrapper {
 		font: 14px verdana, sans-serif;
 		// background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y;
