@@ -468,17 +468,44 @@ font-size: 28px;
 			}
 	}
 
-	//Adding seagrass to side of requirements
-// .requirements::before {
-// 	content: url(assets/seagrass-svg-01-01.svg);
-	
-//center
-	// grid-column-start: 1;
-    // grid-column-end: 1;
-    // grid-row-start: 1;
-    // grid-row-end: 4;
 
-// }
+@keyframes slide {
+  0% {}
+  25%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  75%{
+    transform: translateY(-12px);
+  }
+  100% {}
+}
+
+
+	//Adding seagrass to side of requirements
+.requirements::before {
+	content: url(assets/seaweed-left.png);
+	animation: slide 2s linear infinite;
+	grid-column-start: 1;
+    grid-column-end: 1;
+    // grid-row-start: 4;
+    // grid-row-end: 7;
+grid-row: 3 / span 4;
+ }
+
+.requirements::after {
+	content: url(assets/seaweed-right.png);
+	animation: slide 2s linear infinite;
+	grid-column-start: 5;
+    grid-column-end: 5;
+    // grid-row-start: 2;
+	// grid-row-end: 5;
+grid-row: 1 / span 4;
+}
+
+
 
 	.sidebar .wrapper {
 		font: 14px verdana, sans-serif;

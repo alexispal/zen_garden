@@ -470,6 +470,64 @@ footer a:hover {
         grid-column-start: 2;
     grid-column-end: 5;
   }
+  @-webkit-keyframes slide {
+    0% {
+    }
+    25% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+    75% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+    }
+    100% {
+    }
+  }
+  @keyframes slide {
+    0% {
+    }
+    25% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+    75% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+    }
+    100% {
+    }
+  }
+  .requirements::before {
+    content: url(assets/seaweed-left.png);
+    -webkit-animation: slide 2s linear infinite;
+            animation: slide 2s linear infinite;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 4;
+    grid-row: 3 / span 4;
+  }
+  .requirements::after {
+    content: url(assets/seaweed-right.png);
+    -webkit-animation: slide 2s linear infinite;
+            animation: slide 2s linear infinite;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1 / span 4;
+  }
   .sidebar .wrapper {
     font: 14px verdana, sans-serif;
     display: -ms-grid;
