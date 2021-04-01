@@ -131,17 +131,20 @@ header {
 	text-align: center;
 	font-family: $heading-font;
 	color: $primary-color;
-	text-shadow: 2px 2px 4px $accent5-color;
+
 
 	h1 {
 	font-size: 60px;
-
+    text-shadow: 1px 1px 2px $accent5-color, 0 0 1em $accent5-color, 0 0 0.2em $accent5-color;
 }
 
 	 h2 {
 	font-size: 30px;
+	text-shadow: 1px 1px 2px $accent5-color, 0 0 1em $accent5-color, 0 0 0.2em $accent5-color;
+
 }
 }
+
 
 
 //summary nesting--Sam
