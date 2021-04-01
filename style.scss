@@ -293,7 +293,6 @@ footer a:hover {
 	// padding: 10px;
 	text-shadow: 1px 1px 2px $accent5-color, 0 0 1em $accent5-color, 0 0 0.2em $accent5-color;
 	min-height: 390px;
-	padding-bottom: -20px;
 
 	ul {
 		margin: 0;
@@ -380,6 +379,8 @@ a:visited {
 li.zen-translations{
 	padding: 0;
 }
+
+
 @media only screen and (min-width: 850px) {
 	p{
 		font-size: 18px;
@@ -514,8 +515,6 @@ li.zen-translations{
 	// grid-row-end: 5;
 	grid-row: 1 / span 4;
 }
-
-
 
 	.sidebar .wrapper {
 		font: 17px $paragraph-font;
