@@ -46,12 +46,7 @@ body {
 	width: 100%;
 	color: $accent5-color;
 
-	// gradient light green to dark blue scrolling down
-// 	background: linear-gradient(#97D8E2, #8FCBDE, #78B1D5, #6194C2);
-// }
-
-		// gradient light blue to dark blue scrolling down
-	// background: linear-gradient(#D7E9FE, #B7D6F7, #84BCF3, #509BDE, #2480CD, #0645A4);
+		// gradient light aqua to dark aqua scrolling down
 	background: linear-gradient(#cff8f8, #B6F5F5,  #9DF2F1, #8CEFEF, #6bebea);
 }
 
@@ -175,7 +170,7 @@ header {
 
 	// orange starfish image--sam
 .preamble::after, .participation::after{
-	content: url(assets/starfish-orange.svg); 
+	content: url(assets/starfish-orange.svg);
 	   animation: spinning-star 9s linear infinite;
 	   width: 200px;
 	   height: auto;
