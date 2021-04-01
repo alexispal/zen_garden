@@ -139,9 +139,8 @@ header {
 }
 
 	h2 {
-		font-size: 30px;
+		font-size: 25px;
 		text-shadow: 1px 1px 2px $accent5-color, 0 0 1em $accent5-color, 0 0 0.2em $accent5-color;
-
 }
 }
 
@@ -537,7 +536,7 @@ li.zen-translations{
 
 @media only screen and (max-width: 850px) {
 	header{
-		background: url(assets/fish-svg-small-01.svg) no-repeat;
+		background: url(assets/fish-svg-small-01.svg) repeat-x;
 	
 	h1{
 		font-size: 35px;
