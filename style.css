@@ -107,7 +107,7 @@ header h1 {
   text-shadow: 1px 1px 2px #16324F, 0 0 1em #16324F, 0 0 0.2em #16324F;
 }
 header h2 {
-  font-size: 30px;
+  font-size: 25px;
   text-shadow: 1px 1px 2px #16324F, 0 0 1em #16324F, 0 0 0.2em #16324F;
 }
 
@@ -432,7 +432,7 @@ li.zen-translations {
 }
 @media only screen and (max-width: 850px) {
   header {
-    background: url(assets/fish-svg-small-01.svg) no-repeat;
+    background: url(assets/fish-svg-small-01.svg) repeat-x;
   }
   header h1 {
     font-size: 35px;
@@ -441,11 +441,6 @@ li.zen-translations {
     font-size: 15px;
     position: absolute;
     top: 0;
-  }
-}
-@media only screen and (min-width: 387px) {
-  header {
-    background: url(assets/fish-svg-border-01.svg);
   }
 }
 
