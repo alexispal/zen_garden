@@ -126,21 +126,21 @@ abbr {
 
 //changed nesting header--Sam
 header {
-	background: url(assets/fish-svg-01-01.svg);
-	padding: 2em;
+	background: url(assets/fish-svg-border-01.svg);
+	padding: 4em;
 	text-align: center;
 	font-family: $heading-font;
 	color: $primary-color;
 
 
 	h1 {
-	font-size: 60px;
-    text-shadow: 1px 1px 2px $accent5-color, 0 0 1em $accent5-color, 0 0 0.2em $accent5-color;
+		font-size: 60px;
+    	text-shadow: 1px 1px 2px $accent5-color, 0 0 1em $accent5-color, 0 0 0.2em $accent5-color;
 }
 
-	 h2 {
-	font-size: 30px;
-	text-shadow: 1px 1px 2px $accent5-color, 0 0 1em $accent5-color, 0 0 0.2em $accent5-color;
+	h2 {
+		font-size: 30px;
+		text-shadow: 1px 1px 2px $accent5-color, 0 0 1em $accent5-color, 0 0 0.2em $accent5-color;
 
 }
 }
@@ -152,6 +152,7 @@ header {
 	clear: both;
 	margin: 0 auto;
 	max-width: 550px;
+	padding: 3em;
 	
 	/* width: 350px; */
 	/* float: left; */
@@ -379,12 +380,13 @@ a:visited {
 		font-size: 18px;
 	}
 	h3{
-font-size: 28px;
+	font-size: 28px;
 	}
 	header h2 {
 		position: absolute;
 		top: 0;
 	}
+	
 	#zen-intro > header{
 		margin: 0;
 	}
@@ -505,7 +507,7 @@ grid-row: 3 / span 4;
     grid-column-end: 5;
     // grid-row-start: 2;
 	// grid-row-end: 5;
-grid-row: 1 / span 4;
+	grid-row: 1 / span 4;
 }
 
 
@@ -525,4 +527,25 @@ grid-row: 1 / span 4;
 		justify-content: center;
 }
 	
+}
+
+@media only screen and (max-width: 850px) {
+	header{
+		background: url(assets/fish-svg-small-01.svg) no-repeat;
+	
+	h1{
+		font-size: 35px;
+	}
+	h2{
+		font-size: 15px;
+		position: absolute;
+		top: 0;
+	}
+	}
+}
+
+@media only screen and (min-width: 387px) {
+	header{
+		background: url(assets/fish-svg-border-01.svg);
+}
 }
