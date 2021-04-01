@@ -310,6 +310,7 @@ footer a:hover {
   right: 0;
   background: url(assets/undersea.jpeg);
   padding: 10px;
+  text-shadow: 1px 1px 2px #16324F, 0 0 1em #16324F, 0 0 0.2em #16324F;
 }
 
 .sidebar ul {
@@ -536,7 +537,7 @@ li.zen-translations {
     grid-row: 1 / span 4;
   }
   .sidebar .wrapper {
-    font: 14px "Roboto", sans-serif;
+    font: 17px "Roboto", sans-serif;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 300px 200px 300px;

@@ -293,11 +293,12 @@ footer a:hover {
 	right: 0;
 	background: url(assets/undersea.jpeg);
 	padding: 10px;
+	text-shadow: 1px 1px 2px $accent5-color, 0 0 1em $accent5-color, 0 0 0.2em $accent5-color;
 
 
 	ul {
 		margin: 0;
-		padding: 0;
+		padding: 0; 
 	}
 
 	li {
@@ -518,7 +519,7 @@ li.zen-translations{
 
 
 	.sidebar .wrapper {
-		font: 14px $paragraph-font;
+		font: 17px $paragraph-font;
 		// background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y;
 		// padding: 10px;
 		// margin-top: 150px;
